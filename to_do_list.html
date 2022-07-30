@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="h1 center">TO-DO LIST APP</h1>
+        <div class="form center">
+            <form id="task list form">
+
+                <div><input type="text" name="title" id="title" placeholder="Title">
+                </div>
+
+                <br>
+
+                <div> <textarea name="Description" id="Description" placeholder="Description" cols="40"
+                        rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn center" id="btn">Add to List</button>
+            </form>
+        </div>
+
+        <hr class="lin">
+
+        <div class="tasks center">
+            <h2>Tasks</h2>
+            <table class="task center ">
+
+                <thead class="center border ">
+                    <tr class="center border">
+
+                        <th>Serial No.</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Action Taken</th>
+
+                    </tr>
+                </thead>
+
+                <tbody id="tabContent">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><button class="btn-delete btn" id="btn-delete" onclick="Delete()">X</button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
